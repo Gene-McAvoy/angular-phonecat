@@ -2,7 +2,7 @@
 
 angular.
   module('phonecatApp').
-  config(['$routeProvider',
+  config(['$routeProvider', '$locationProvider',
     function config($routeProvider) {
       $routeProvider.
         when('/phones', {
@@ -12,5 +12,8 @@ angular.
           template: '<phone-detail></phone-detail>'
         }).
         otherwise('/phones');
+
+        
+        
     }
   ]);
